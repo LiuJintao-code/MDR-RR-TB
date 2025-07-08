@@ -23,15 +23,16 @@ Early prediction of MDR/RR-TB treatment outcomes is critical for:
 | Hospital 2    | Mar 2021–Jun 2022 | 137      | Validation Set |
 
 ### Models Developed
-- **Baseline**: Logistic Regression  
-- **Machine Learning**:  
-  - Artificial Neural Network (ANN)  
-  - Random Forest  
-  - XGBoost  
-  - Support Vector Machine  
-  - Naive Bayes  
-  - K-Nearest Neighbors  
-  - Decision Tree  
+- **Single Models**:
+  - Logistic Regression (LR)
+  - Random Forest (RF)
+  - Support Vector Machine (SVM)
+  - Gradient Boosting Decision Tree (GBDT)
+  - Elastic Net (EN)
+  - Artificial Neural Network (ANN)
+- **Ensemble Methods**:  
+  - Stacking (using RF, SVM, GBDT, EN, ANN as base learners)
+  - Voting (using RF, SVM, GBDT, EN, ANN as base learners)
 
 ### Evaluation Metrics
 - AUC (Area Under ROC Curve)  
